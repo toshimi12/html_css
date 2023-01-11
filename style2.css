@@ -19,6 +19,12 @@ header {
 }
 
 @media screen and (max-width: 1080px){
+.Header {
+    background-color: #fff;
+    z-index: 10;
+}
+}
+@media screen and (max-width: 1080px){
 .Header--common:hover{
     position: fixed !important;
 }
@@ -67,7 +73,8 @@ img {
     display: none;
 }
 }
-.HeaderLogo__image--sp {
+
+.HeaderLogo__image--sp{
     display: none;
     height: 16px;
     width: auto;
@@ -76,13 +83,11 @@ img {
     border: 0;
     vertical-align: middle;
 }
-
 @media screen and (max-width: 767px){
-.HeaderLogo__image--sp {
+.HeaderLogo__image--sp{
     display: block;
 }
 }
-
 .HeaderContainer>*:last-child {
     display: inline-flex;
 }
@@ -273,7 +278,7 @@ main {
     display: block;
 }
 .FirstView {
-    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 100px;
@@ -374,9 +379,10 @@ img {
     vertical-align: middle;
 }
 
-FirstViewContent__images img:nth-of-type(2) {
+.FirstViewContent__images img:nth-of-type(2) {
     width: 40%;
 }
+
 
 @media screen and (max-width: 767px){
 .FirstViewContent__images img {
@@ -550,6 +556,12 @@ a {
     background-color: #f79214;
     padding: 44px 0;
 }
+
+@media screen and (max-width: 767px){
+.AboutWrapper {
+    padding: 30px 0;
+}
+}
 @media screen and (max-width: 1024px){
 .About {
     flex-direction: column;
@@ -565,6 +577,14 @@ a {
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 767px){
+.About {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }
 .About__video {
     width: 50%;
@@ -651,6 +671,12 @@ a {
 }
 .About__title br {
     display: none;
+}
+
+@media screen and (max-width: 400px){
+.About__title br {
+    display: block;
+}
 }
 .About__title p {
     font-size: 16px;
